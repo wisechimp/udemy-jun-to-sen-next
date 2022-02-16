@@ -1,6 +1,5 @@
 import { NextPage } from 'next'
 import Link from 'next/link'
-import fetch from 'isomorphic-unfetch'
 
 import { Robot } from '../types/robot'
 
@@ -24,7 +23,7 @@ const Robots: NextPage<Props> = ({ robots }) => {
   )
 }
 
-Robots.getInitialProps = async () => {
+export async function getStaticProps() {
   const res = await fetch('https://jsonplaceholder.typicode.com/users')
   const data = await res.json()
   console.log(data)
