@@ -25,9 +25,13 @@ const Robots: NextPage<Props> = ({ robots }) => {
 
 export async function getStaticProps() {
   const res = await fetch('https://jsonplaceholder.typicode.com/users')
-  const data = await res.json()
-  console.log(data)
-  return { robots: data }
+  const robots = await res.json()
+  console.log(robots)
+  return { 
+    props: 
+    {
+      robots
+  } }
 }
 
 export default Robots
