@@ -27,11 +27,11 @@ export async function getStaticProps() {
   const res = await fetch('https://jsonplaceholder.typicode.com/users')
   const robots = await res.json()
   console.log(robots)
-  return { 
-    props: 
-    {
-      robots
-  } }
+  return {
+    props: {
+      robots,
+    },
+  }
 }
 
 export default Robots
