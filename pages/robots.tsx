@@ -14,15 +14,11 @@ const Robots: NextPage<Props> = ({ robots }) => {
       <h1>We are Robots</h1>
       <p>000000000000001</p>
       <div>
-        {
-          (robots as Robot[]).map((robot: Robot) => (
-            <li key={robot.id}>{robot.name}</li>
-          ))
-        }
+        {(robots as Robot[]).map((robot: Robot) => (
+          <li key={robot.id}>{robot.name}</li>
+        ))}
       </div>
-      <Link href="/">
-        Home
-      </Link>
+      <Link href="/">Home</Link>
       <Link href="/about">About</Link>
     </div>
   )
