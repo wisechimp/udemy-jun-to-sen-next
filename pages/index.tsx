@@ -5,6 +5,7 @@ const Home = () => (
     <h1>Welcome to Next</h1>
     <p>Here's where your SSR journey will begin Gatsby troll.</p>
     <Link href="/about">About</Link>
+    <Link href="/robots">Robots</Link>
   </div>
 )
 

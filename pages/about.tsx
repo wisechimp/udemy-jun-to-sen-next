@@ -9,6 +9,7 @@ const About = () => {
       <p>This is not Gatsby!</p>
       <GNImage />
       <Link href="/">Home</Link>
+      <Link href="/robots">Robots</Link>
     </div>
   )
 }
